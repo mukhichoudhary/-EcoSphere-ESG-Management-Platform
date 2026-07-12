@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoSphere Login | Register</title>
+
+    <link rel="stylesheet" href="login.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="left">
+
+        <h1>🌿 EcoSphere</h1>
+
+        <h2>ESG Management Platform</h2>
+
+        <p>
+
+            Monitor Environmental, Social and Governance activities,
+            generate reports, earn rewards and improve sustainability.
+
+        </p>
+
+    </div>
+
+
+    <div class="right">
+
+        <div class="login-box">
+
+            <div class="auth-tabs">
+                <button type="button" class="tab-btn active" id="loginTab">Login</button>
+                <button type="button" class="tab-btn" id="registerTab">Register</button>
+            </div>
+
+            <p id="authSubtitle">Welcome Back 👋</p>
+
+            <form id="loginForm">
+
+                <div class="input-box" id="nameContainer" style="display: none;">
+
+                    <label>Full Name</label>
+
+                    <input
+                    type="text"
+                    id="fullname"
+                    placeholder="Enter Full Name">
+
+                </div>
+
+                <div class="input-box" id="companyContainer" style="display: none;">
+
+                    <label>Company Name</label>
+
+                    <input
+                    type="text"
+                    id="company"
+                    placeholder="Enter Company Name">
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Email</label>
+
+                    <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter Email"
+                    required>
+
+                </div>
+
+                <div class="input-box">
+
+                    <label>Password</label>
+
+                    <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter Password"
+                    required>
+
+                </div>
+
+                <div class="options">
+
+                    <label>
+
+                        <input type="checkbox" id="showPassword">
+
+                        Show Password
+
+                    </label>
+
+                </div>
+
+                <button type="submit" id="authSubmitBtn">
+
+                    Login
+
+                </button>
+
+            </form>
+
+
+
+            <p class="signup" id="demoCredentialsSection">
+
+                Demo Login
+
+                <br><br>
+
+                Email :
+                <b>admin@ecosphere.com</b>
+
+                <br>
+
+                Password :
+                <b>123456</b>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="login.js"></script>
+
+</body>
+
+</html>

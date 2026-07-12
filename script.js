@@ -2,40 +2,47 @@
 // EXPLORE BUTTON
 // ============================
 
+// ============================
+// EXPLORE & CTA BUTTONS
+// ============================
+
 const exploreBtn = document.getElementById("exploreBtn");
+const ctaBtn = document.querySelector(".cta button");
+
+function handleGetStarted() {
+    if (localStorage.getItem("isLoggedIn") === "true") {
+        window.location.href = "dashboard.html";
+    } else {
+        window.location.href = "login.html";
+    }
+}
 
 if (exploreBtn) {
-    exploreBtn.addEventListener("click", function () {
-        document.getElementById("features").scrollIntoView({
-            behavior: "smooth"
-        });
-    });
+    exploreBtn.addEventListener("click", handleGetStarted);
+}
+
+if (ctaBtn) {
+    ctaBtn.addEventListener("click", handleGetStarted);
 }
 
 // ============================
-// LOGIN BUTTON
+// LOGIN / DASHBOARD BUTTON
 // ============================
 
 const loginBtn = document.querySelector(".login-btn");
 
 if (loginBtn) {
-    loginBtn.addEventListener("click", function () {
-        alert("Login Page Coming Soon!");
-        // Later:
-        // window.location.href = "login.html";
-    });
-}
-
-// ============================
-// CTA BUTTON
-// ============================
-
-const ctaBtn = document.querySelector(".cta button");
-
-if (ctaBtn) {
-    ctaBtn.addEventListener("click", function () {
-        alert("Welcome to EcoSphere!");
-    });
+    if (localStorage.getItem("isLoggedIn") === "true") {
+        loginBtn.textContent = "Dashboard";
+        loginBtn.addEventListener("click", () => {
+            window.location.href = "dashboard.html";
+        });
+    } else {
+        loginBtn.textContent = "Login";
+        loginBtn.addEventListener("click", () => {
+            window.location.href = "login.html";
+        });
+    }
 }
 
 // ============================
