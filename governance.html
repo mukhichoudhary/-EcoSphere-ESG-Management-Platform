@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Governance Module | EcoSphere</title>
+
+    <link rel="stylesheet" href="governance.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <div class="sidebar">
+
+    <h2>🌿 EcoSphere</h2>
+
+    <ul>
+
+        <li><a href="dashboard.html">🏠 Dashboard</a></li>
+
+        <li><a href="environmental.html">🌱 Environmental</a></li>
+
+        <li><a href="social.html">🤝 Social</a></li>
+
+        <li><a href="governance.html">⚖ Governance</a></li>
+
+        <li><a href="gamification.html">🏆 Gamification</a></li>
+
+        <li><a href="reports.html">📄 Reports</a></li>
+
+        <li><a href="settings.html">⚙ Settings</a></li>
+
+    </ul>
+
+</div>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <div class="main">
+
+        <!-- Topbar -->
+
+        <div class="topbar">
+
+            <h1>⚖ Governance Dashboard</h1>
+
+            <button class="add-btn">
+
+                + Add Audit
+
+            </button>
+
+        </div>
+
+
+        <!-- Score Cards -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Compliance Score</h3>
+
+                <h2>95%</h2>
+
+                <p>Overall Compliance</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Policies</h3>
+
+                <h2>18</h2>
+
+                <p>Active Policies</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Audits</h3>
+
+                <h2>12</h2>
+
+                <p>Completed</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Issues</h3>
+
+                <h2>4</h2>
+
+                <p>Pending Resolution</p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Governance Chart -->
+
+        <div class="chart-box">
+
+            <h2>Monthly Compliance Score</h2>
+
+            <canvas id="governanceChart"></canvas>
+
+        </div>
+
+
+
+        <!-- Policy Table -->
+
+        <div class="table-section">
+
+            <h2>ESG Policies</h2>
+
+            <table>
+
+                <tr>
+
+                    <th>Policy</th>
+
+                    <th>Owner</th>
+
+                    <th>Status</th>
+
+                </tr>
+
+                <tr>
+
+                    <td>Data Privacy</td>
+
+                    <td>IT Department</td>
+
+                    <td>Active</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Health & Safety</td>
+
+                    <td>HR</td>
+
+                    <td>Approved</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Environmental Policy</td>
+
+                    <td>Operations</td>
+
+                    <td>Under Review</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Code of Conduct</td>
+
+                    <td>Management</td>
+
+                    <td>Active</td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+
+
+        <!-- Compliance Issues -->
+
+        <div class="activities">
+
+            <h2>Compliance Issues</h2>
+
+            <ul>
+
+                <li>🚨 Fire Safety Audit Pending</li>
+
+                <li>📄 Vendor Compliance Verification</li>
+
+                <li>⚠ Employee Policy Acknowledgement Required</li>
+
+                <li>✅ Internal Audit Successfully Completed</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <script src="governance.js"></script>
+
+</body>
+
+</html>

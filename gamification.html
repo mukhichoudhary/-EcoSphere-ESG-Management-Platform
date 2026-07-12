@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gamification | EcoSphere</title>
+
+    <link rel="stylesheet" href="gamification.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+    <h2>🌿 EcoSphere</h2>
+
+    <ul>
+
+        <li><a href="dashboard.html">🏠 Dashboard</a></li>
+
+        <li><a href="environmental.html">🌱 Environmental</a></li>
+
+        <li><a href="social.html">🤝 Social</a></li>
+
+        <li><a href="governance.html">⚖ Governance</a></li>
+
+        <li><a href="gamification.html">🏆 Gamification</a></li>
+
+        <li><a href="reports.html">📄 Reports</a></li>
+
+        <li><a href="settings.html">⚙ Settings</a></li>
+
+    </ul>
+
+</div>
+    <!-- Main -->
+
+    <div class="main">
+
+        <div class="topbar">
+
+            <h1>🏆 Gamification Dashboard</h1>
+
+            <button class="reward-btn">
+                Claim Reward
+            </button>
+
+        </div>
+
+        <!-- Cards -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Total XP</h3>
+
+                <h2>4,250</h2>
+
+                <p>Experience Points</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Badges Earned</h3>
+
+                <h2>12</h2>
+
+                <p>Achievements</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Challenges</h3>
+
+                <h2>18</h2>
+
+                <p>Completed</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Leaderboard</h3>
+
+                <h2>#2</h2>
+
+                <p>Company Ranking</p>
+
+            </div>
+
+        </div>
+
+        <!-- Progress -->
+
+        <div class="progress-section">
+
+            <h2>Current Level Progress</h2>
+
+            <progress value="78" max="100"></progress>
+
+            <p>78% Completed to Reach Level 10</p>
+
+        </div>
+
+        <!-- Chart -->
+
+        <div class="chart-box">
+
+            <h2>Monthly XP Growth</h2>
+
+            <canvas id="xpChart"></canvas>
+
+        </div>
+
+        <!-- Leaderboard -->
+
+        <div class="table-section">
+
+            <h2>Top Performers</h2>
+
+            <table>
+
+                <tr>
+
+                    <th>Rank</th>
+
+                    <th>Name</th>
+
+                    <th>XP</th>
+
+                </tr>
+
+                <tr>
+
+                    <td>🥇</td>
+
+                    <td>Rahul</td>
+
+                    <td>5200</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>🥈</td>
+
+                    <td>You</td>
+
+                    <td>4250</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>🥉</td>
+
+                    <td>Ananya</td>
+
+                    <td>4100</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>4</td>
+
+                    <td>Amit</td>
+
+                    <td>3920</td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- Rewards -->
+
+        <div class="activities">
+
+            <h2>Available Rewards</h2>
+
+            <ul>
+
+                <li>🎁 Eco Champion Badge</li>
+
+                <li>🌱 Green Warrior Certificate</li>
+
+                <li>🏅 Sustainability Star</li>
+
+                <li>🎉 Premium EcoSphere Theme</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="gamification.js"></script>
+
+</body>
+
+</html>
