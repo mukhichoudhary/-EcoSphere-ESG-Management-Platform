@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Module | EcoSphere</title>
+
+    <link rel="stylesheet" href="social.css">
+    <script src="theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>🌿 EcoSphere</h2>
+
+    <ul>
+
+        <li><a href="dashboard.html">🏠 Dashboard</a></li>
+
+        <li><a href="environmental.html">🌱 Environmental</a></li>
+
+        <li class="active"><a href="social.html">🤝 Social</a></li>
+
+        <li><a href="governance.html">⚖ Governance</a></li>
+
+        <li><a href="gamification.html">🏆 Gamification</a></li>
+
+        <li><a href="reports.html">📄 Reports</a></li>
+
+        <li><a href="settings.html">⚙ Settings</a></li>
+
+    </ul>
+
+</div>
+
+
+<div class="main">
+
+    <div class="topbar">
+
+        <h1>🤝 Social Dashboard</h1>
+
+        <button class="add-btn">
+            + Add CSR Activity
+        </button>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>CSR Activities</h3>
+            <h2>28</h2>
+            <p>Completed</p>
+        </div>
+
+        <div class="card">
+            <h3>Employee Participation</h3>
+            <h2>86%</h2>
+            <p>This Month</p>
+        </div>
+
+        <div class="card">
+            <h3>Diversity Score</h3>
+            <h2>91%</h2>
+            <p>Organization</p>
+        </div>
+
+        <div class="card">
+            <h3>Training Completion</h3>
+            <h2>74%</h2>
+            <p>Completed</p>
+        </div>
+
+    </div>
+
+    <div class="chart-box">
+
+        <h2>Employee Participation</h2>
+
+        <canvas id="socialChart"></canvas>
+
+    </div>
+
+    <div class="table-section">
+
+        <h2>CSR Activities</h2>
+
+        <table>
+
+            <tr>
+
+                <th>Activity</th>
+
+                <th>Department</th>
+
+                <th>Status</th>
+
+            </tr>
+
+            <tr>
+
+                <td>Blood Donation</td>
+
+                <td>HR</td>
+
+                <td>Completed</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Tree Plantation</td>
+
+                <td>IT</td>
+
+                <td>Completed</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Education Camp</td>
+
+                <td>Sales</td>
+
+                <td>Pending</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Health Camp</td>
+
+                <td>Finance</td>
+
+                <td>Approved</td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="activities">
+
+        <h2>Recent Activities</h2>
+
+        <ul>
+
+            <li>🎉 Blood Donation Camp Completed</li>
+
+            <li>🌳 CSR Tree Plantation</li>
+
+            <li>📚 Free Education Program</li>
+
+            <li>🏥 Health Awareness Workshop</li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<script src="social.js"></script>
+
+</body>
+
+</html>

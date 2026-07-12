@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#10b981);
+
+}
+
+.container{
+
+    width:1000px;
+    max-width:95%;
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.3);
+
+}
+
+/* ================= LEFT ================= */
+
+.left{
+
+    background:linear-gradient(135deg,#15803d,#10b981);
+
+    color:white;
+
+    padding:60px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.left h1{
+
+    font-size:45px;
+
+    margin-bottom:20px;
+
+}
+
+.left h2{
+
+    margin-bottom:20px;
+
+    font-weight:600;
+
+}
+
+.left p{
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+
+/* ================= RIGHT ================= */
+
+.right{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+.login-box{
+
+    width:100%;
+
+    max-width:380px;
+
+}
+
+.login-box h2{
+
+    text-align:center;
+
+    color:#15803d;
+
+    margin-bottom:10px;
+
+    font-size:32px;
+
+}
+
+.login-box p{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:30px;
+
+}
+
+/* ================= INPUT ================= */
+
+.input-box{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:20px;
+
+}
+
+.input-box label{
+
+    margin-bottom:8px;
+
+    font-weight:500;
+
+}
+
+.input-box input{
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.input-box input:focus{
+
+    border-color:#10b981;
+
+    box-shadow:0 0 10px rgba(16,185,129,.3);
+
+}
+
+/* ================= OPTIONS ================= */
+
+.options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+    font-size:14px;
+
+}
+
+.options label{
+
+    cursor:pointer;
+
+}
+
+/* ================= BUTTON ================= */
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    background:#10b981;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#059669;
+
+    transform:translateY(-2px);
+
+}
+
+/* ================= DEMO ================= */
+
+.signup{
+
+    margin-top:25px;
+
+    background:#f3f4f6;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    font-size:14px;
+
+    color:#444;
+
+}
+
+.signup b{
+
+    color:#15803d;
+
+}
+
+/* ================= TABS ================= */
+
+.auth-tabs{
+
+    display:flex;
+
+    margin-bottom:20px;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    border:2px solid #10b981;
+
+}
+
+.tab-btn{
+
+    flex:1;
+
+    padding:10px;
+
+    background:transparent;
+
+    color:#10b981;
+
+    border:none;
+
+    border-radius:0;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+    width:auto;
+
+}
+
+.tab-btn.active{
+
+    background:#10b981;
+
+    color:white;
+
+}
+
+.tab-btn:hover:not(.active){
+
+    background:rgba(16,185,129,.1);
+
+    transform:none;
+
+}
+
+/* ================= ANIMATION ================= */
+
+.login-box{
+
+    animation:fadeIn .8s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+.container{
+
+    grid-template-columns:1fr;
+
+}
+
+.left{
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.left h1{
+
+    font-size:36px;
+
+}
+
+.right{
+
+    padding:30px;
+
+}
+
+}
