@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Settings | EcoSphere</title>
+
+    <link rel="stylesheet" href="settings.css">
+    <script src="theme.js"></script>
+
+</head>
+
+<body>
+
+    <!-- ================= Sidebar ================= -->
+
+    <div class="sidebar">
+
+        <h2>🌿 EcoSphere</h2>
+
+        <ul>
+
+            <li><a href="dashboard.html">🏠 Dashboard</a></li>
+
+            <li><a href="environmental.html">🌱 Environmental</a></li>
+
+            <li><a href="social.html">🤝 Social</a></li>
+
+            <li><a href="governance.html">⚖ Governance</a></li>
+
+            <li><a href="gamification.html">🏆 Gamification</a></li>
+
+            <li><a href="reports.html">📄 Reports</a></li>
+
+            <li class="active">
+                <a href="settings.html">⚙ Settings</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+
+    <!-- ================= Main ================= -->
+
+    <div class="main">
+
+        <div class="topbar">
+
+            <h1>⚙ Account Settings</h1>
+
+            <button class="save-btn">
+                Save Changes
+            </button>
+
+        </div>
+
+
+        <!-- Profile Section -->
+
+        <div class="settings-card">
+
+            <h2>👤 Profile Information</h2>
+
+            <div class="input-group">
+
+                <label>Full Name</label>
+
+                <input type="text" value="Mukhi Choudhary">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Email</label>
+
+                <input type="email" value="mukhi@example.com">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Company</label>
+
+                <input type="text" value="EcoSphere Pvt Ltd">
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Preferences -->
+
+        <div class="settings-card">
+
+            <h2>🎨 Preferences</h2>
+
+            <div class="toggle">
+
+                <label>Dark Mode</label>
+
+                <input type="checkbox" id="darkMode">
+
+            </div>
+
+            <div class="toggle">
+
+                <label>Email Notifications</label>
+
+                <input type="checkbox" checked>
+
+            </div>
+
+            <div class="toggle">
+
+                <label>Push Notifications</label>
+
+                <input type="checkbox" checked>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Security -->
+
+        <div class="settings-card">
+
+            <h2>🔒 Security</h2>
+
+            <button class="security-btn">
+                Change Password
+            </button>
+
+            <button class="security-btn">
+                Enable Two-Factor Authentication
+            </button>
+
+        </div>
+
+
+
+        <!-- Theme -->
+
+        <div class="settings-card">
+
+            <h2>🌈 Theme</h2>
+
+            <select id="theme">
+
+                <option>Default</option>
+
+                <option>Green</option>
+
+                <option>Blue</option>
+
+                <option>Purple</option>
+
+                <option>Dark</option>
+
+            </select>
+
+        </div>
+
+        <!-- ESG Configuration -->
+
+        <div class="settings-card">
+
+            <h2>🌍 ESG Configuration</h2>
+
+            <div class="input-group">
+                <label>Environmental Weight (%)</label>
+                <input type="number" id="envWeight" min="0" max="100" value="40">
+            </div>
+
+            <div class="input-group">
+                <label>Social Weight (%)</label>
+                <input type="number" id="socWeight" min="0" max="100" value="30">
+            </div>
+
+            <div class="input-group">
+                <label>Governance Weight (%)</label>
+                <input type="number" id="govWeight" min="0" max="100" value="30">
+            </div>
+
+            <div class="toggle">
+                <label>Auto Emission Calculation</label>
+                <input type="checkbox" id="autoEmissionCalc">
+            </div>
+
+            <div class="toggle">
+                <label>Enforce CSR Evidence Requirement (Proof File)</label>
+                <input type="checkbox" id="evidenceRequired">
+            </div>
+
+            <div class="toggle">
+                <label>Enable Badge Auto-Awarding</label>
+                <input type="checkbox" id="badgeAutoAward">
+            </div>
+
+        </div>
+
+        <!-- Notification Settings -->
+
+        <div class="settings-card">
+
+            <h2>🔔 Notification Settings</h2>
+
+            <div class="toggle">
+                <label>Notify on new compliance issues raised</label>
+                <input type="checkbox" id="notifyComplianceIssue">
+            </div>
+
+            <div class="toggle">
+                <label>Notify on CSR/Challenge approval decisions</label>
+                <input type="checkbox" id="notifyApprovalDecision">
+            </div>
+
+            <div class="toggle">
+                <label>Notify on policy acknowledgement reminders</label>
+                <input type="checkbox" id="notifyPolicyReminder">
+            </div>
+
+            <div class="toggle">
+                <label>Notify on badge unlocks</label>
+                <input type="checkbox" id="notifyBadgeUnlock">
+            </div>
+
+        </div>
+
+
+
+        <!-- About -->
+
+        <div class="settings-card">
+
+            <h2>ℹ About EcoSphere</h2>
+
+            <p>
+
+                EcoSphere helps organizations manage Environmental,
+                Social and Governance (ESG) activities efficiently.
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="settings.js"></script>
+
+</body>
+
+</html>
