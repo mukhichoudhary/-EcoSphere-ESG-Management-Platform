@@ -45,8 +45,30 @@ ecosphere/
 
 - [Node.js](https://nodejs.org/) v16 or higher
 - npm
+### Installation
 
-The server will start at **http://localhost:3000**.
+```bash
+# Clone the repository
+git clone <your-repo-url>
+cd ecosphere
+
+# Install dependencies
+npm install
+```
+
+### Running the App
+
+```bash
+# Development (with auto-restart)
+npm run dev
+
+# Production
+npm start
+```
+
+The server will start at **http://localhost:3001**.
+
+The server will not start until the Prerequisites are completed
 
 ---
 
